@@ -210,5 +210,44 @@ public  class Constantes {
             "    ]\n" +
             "  }\n" +
             "}";
-
+    public static String pessoaJuridica = "{\n" +
+            "  \"key\": {\n" +
+            "    \"cnpj\": \"33683111000107\"\n" +
+            "  },\n" +
+            "  \"answer\": {\n" +
+            "    \"endereco\": {\n" +
+            "      \"logradouro\": \"Nome do Logradouro\",\n" +
+            "      \"numero\": \"0007\",\n" +
+            "      \"complemento\": \"APTO 2015\",\n" +
+            "      \"bairro\": \"Nome do Bairro\",\n" +
+            "      \"cep\": \"0000001\",\n" +
+            "      \"municipio\": \"Nome do municipio\",\n" +
+            "      \"uf\": \"DF\"\n" +
+            "    },\n" +
+            "    \"porte\": \"00\",\n" +
+            "    \"telefone\": {\n" +
+            "      \"ddd\": \"00\",\n" +
+            "      \"numero\": \"00000000\"\n" +
+            "    },\n" +
+            "    \"razao_social\": \"Nome da empresa\",\n" +
+            "    \"nome_fantasia\": \"Nome Fantasia da Empresa\",\n" +
+            "    \"data_abertura\": \"2000-01-01\",\n" +
+            "    \"cnae_principal\": {\n" +
+            "      \"codigo\": \"6204000\",\n" +
+            "      \"descricao\": \"Descrição do cnae\"\n" +
+            "    },\n" +
+            "    \"natureza_juridica\": {\n" +
+            "      \"codigo\": \"01\",\n" +
+            "      \"descricao\": \"descrição\"\n" +
+            "    },\n" +
+            "    \"situacao_cadastral\": {\n" +
+            "      \"codigo\": 2,\n" +
+            "      \"data\": \"2000-02-01\",\n" +
+            "      \"motivo\": \"Descrição do motivo\"\n" +
+            "    },\n" +
+            "    \"situacao_especial\": \"situação\",\n" +
+            "    \"correio_eletronico\": \"empresa@dominio.com.br\",\n" +
+            "    \"capital_social\": 0\n" +
+            "  }\n" +
+            "}";
 }

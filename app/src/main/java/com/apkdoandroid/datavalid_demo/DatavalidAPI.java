@@ -60,6 +60,11 @@ public interface DatavalidAPI {
     @POST("validate/pf-facial-digital")
     Call<RespostaFacil_e_digital> validacaoB_PessoaFisicaFacialDIGITAL(@Body JsonObject json);
 
+    /**
+     * Validação das informações básicas de uma pessoa jurídica
+     * @param json
+     * @return
+     */
     @POST("validate/pj-basica")
     Call<PessoaJuridica> validacaoBasicaPessoaJuridica(@Body JsonObject json);
 }

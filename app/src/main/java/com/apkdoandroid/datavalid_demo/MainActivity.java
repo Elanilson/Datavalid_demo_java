@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.apkdoandroid.datavalid_demo.model.PF_Facil_CDVResult;
 import com.apkdoandroid.datavalid_demo.model.PessoaFisica;
+import com.apkdoandroid.datavalid_demo.model.PessoaJuridica;
 import com.apkdoandroid.datavalid_demo.model.RespostaFacil_e_digital;
 import com.apkdoandroid.datavalid_demo.model.StatusResposta;
 import com.apkdoandroid.datavalid_demo.util.Constantes;
@@ -241,6 +242,37 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<RespostaFacil_e_digital> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validacaoPJ).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO enviado A IMAGEM facil EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoaJuridica).getAsJsonObject();
+                Call<PessoaJuridica> call = service.validacaoBasicaPessoaJuridica(json);
+                call.enqueue(new Callback<PessoaJuridica>() {
+                    @Override
+                    public void onResponse(Call<PessoaJuridica> call, Response<PessoaJuridica> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.message());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<PessoaJuridica> call, Throwable t) {
                         Log.d("Responde_Datavalid","Code: "+t.getMessage());
                         Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
