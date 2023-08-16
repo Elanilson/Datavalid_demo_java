@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.apkdoandroid.datavalid_demo.model.Pessoa;
+import com.apkdoandroid.datavalid_demo.model.PessoaFisica;
 import com.apkdoandroid.datavalid_demo.model.StatusResposta;
 import com.apkdoandroid.datavalid_demo.util.Constantes;
 import com.google.gson.JsonObject;
@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 JsonParser jsonParser = new JsonParser();
                 JsonObject json = jsonParser.parse(Constantes.pessoa1).getAsJsonObject();
-                Call<Pessoa> call = service.validacaoBasicaCPF(json);
-                call.enqueue(new Callback<Pessoa>() {
+                Call<PessoaFisica> call = service.validacaoBasicaPessoaFisica(json);
+                call.enqueue(new Callback<PessoaFisica>() {
                     @Override
-                    public void onResponse(Call<Pessoa> call, Response<Pessoa> response) {
+                    public void onResponse(Call<PessoaFisica> call, Response<PessoaFisica> response) {
                         if(response.isSuccessful()){
                            // Log.d("Responde_Datavalid","Serviço funcionando");
                             Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
@@ -83,7 +83,38 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<Pessoa> call, Throwable t) {
+                    public void onFailure(Call<PessoaFisica> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validacaoDigital).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO A IMAGEM DE BIOMETRIA EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoa2Digital).getAsJsonObject();
+                Call<PessoaFisica> call = service.validacaoB_PessoaFisicaDigital(json);
+                call.enqueue(new Callback<PessoaFisica>() {
+                    @Override
+                    public void onResponse(Call<PessoaFisica> call, Response<PessoaFisica> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.errorBody());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<PessoaFisica> call, Throwable t) {
                         Log.d("Responde_Datavalid","Code: "+t.getMessage());
                         Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
                     }

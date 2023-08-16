@@ -1,6 +1,6 @@
 package com.apkdoandroid.datavalid_demo;
 
-import com.apkdoandroid.datavalid_demo.model.Pessoa;
+import com.apkdoandroid.datavalid_demo.model.PessoaFisica;
 import com.apkdoandroid.datavalid_demo.model.StatusResposta;
 import com.google.gson.JsonObject;
 
@@ -23,5 +23,13 @@ public interface DatavalidAPI {
      * @return
      */
     @POST("validate/pf-basica")
-    Call<Pessoa> validacaoBasicaCPF(@Body JsonObject json);
+    Call<PessoaFisica> validacaoBasicaPessoaFisica(@Body JsonObject json);
+
+    /**
+     * Validação das informações básicas de uma pessoa física e a biometria das impressões digitais correspondentes
+     * @param json
+     * @return
+     */
+    @POST("validate/pf-digital")
+    Call<PessoaFisica> validacaoB_PessoaFisicaDigital(@Body JsonObject json);
 }

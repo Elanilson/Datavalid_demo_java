@@ -1,6 +1,6 @@
 package com.apkdoandroid.datavalid_demo.model;
 
-public class Pessoa {
+public class PessoaFisica {
 
 
     /**
@@ -44,11 +44,12 @@ public class Pessoa {
     private String code;
     private String message;
     private String description;
+    private String property;
 
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "PessoaFisica{" +
                 "cpf_disponivel=" + cpf_disponivel +
                 ", nome=" + nome +
                 ", nome_similaridade=" + nome_similaridade +
@@ -188,5 +189,11 @@ public class Pessoa {
         this.description = description;
     }
 
+    public String getProperty() {
+        return property;
+    }
 
+    public void setProperty(String property) {
+        this.property = property;
+    }
 }
