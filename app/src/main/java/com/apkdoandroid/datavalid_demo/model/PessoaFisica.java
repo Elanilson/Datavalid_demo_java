@@ -1,5 +1,8 @@
 package com.apkdoandroid.datavalid_demo.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PessoaFisica {
 
 
@@ -45,6 +48,8 @@ public class PessoaFisica {
     private String message;
     private String description;
     private String property;
+    private BiometriaFacial biometria_face;
+    private BiometriaDigital biometria_digital;
 
 
     @Override
@@ -195,5 +200,21 @@ public class PessoaFisica {
 
     public void setProperty(String property) {
         this.property = property;
+    }
+
+    public BiometriaFacial getBiometria_face() {
+        return biometria_face;
+    }
+
+    public void setBiometria_face(BiometriaFacial biometria_face) {
+        this.biometria_face = biometria_face;
+    }
+
+    public BiometriaDigital getBiometria_digital() {
+        return biometria_digital;
+    }
+
+    public void setBiometria_digital(BiometriaDigital biometria_digital) {
+        this.biometria_digital = biometria_digital;
     }
 }

@@ -1,5 +1,7 @@
 package com.apkdoandroid.datavalid_demo.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class CNH {
 
     /**
@@ -15,6 +17,21 @@ public class CNH {
      * observacoes : false
      * observacoes_similaridade : 0.0
      */
+    /**
+     * numero_registro_ocr : 987654321
+     * nome_similaridade : 1.0
+     * nome_ocr : MANUELA ELISA DA MOTA
+     * identidade : true
+     * identidade_similaridade : 1.0
+     * identidade_ocr : 123456789 SSP SP
+     * data_nascimento : true
+     * data_nascimento_ocr : 1975-06-04
+     * data_primeira_habilitacao_ocr : 2000-04-03
+     * data_ultima_emissao_ocr : 2020-04-03
+     * data_validade_ocr : 2025-04-03
+     * retrato : {"disponivel":true,"probabilidade":"Altíssima probabilidade","similaridade":0.9956858549207501}
+     */
+
 
     private boolean nome;
     private double nome_similaridade;
@@ -27,6 +44,14 @@ public class CNH {
     private boolean possui_impedimento;
     private boolean observacoes;
     private double observacoes_similaridade;
+    private String numero_registro_ocr;
+    private String nome_ocr;
+    private String identidade_ocr;
+    private String data_nascimento_ocr;
+    private String data_primeira_habilitacao_ocr;
+    private String data_ultima_emissao_ocr;
+    private String data_validade_ocr;
+    private Retrato retrato;
 
     public boolean isNome() {
         return nome;
@@ -114,5 +139,69 @@ public class CNH {
 
     public void setObservacoes_similaridade(double observacoes_similaridade) {
         this.observacoes_similaridade = observacoes_similaridade;
+    }
+
+    public String getNumero_registro_ocr() {
+        return numero_registro_ocr;
+    }
+
+    public void setNumero_registro_ocr(String numero_registro_ocr) {
+        this.numero_registro_ocr = numero_registro_ocr;
+    }
+
+    public String getNome_ocr() {
+        return nome_ocr;
+    }
+
+    public void setNome_ocr(String nome_ocr) {
+        this.nome_ocr = nome_ocr;
+    }
+
+    public String getIdentidade_ocr() {
+        return identidade_ocr;
+    }
+
+    public void setIdentidade_ocr(String identidade_ocr) {
+        this.identidade_ocr = identidade_ocr;
+    }
+
+    public String getData_nascimento_ocr() {
+        return data_nascimento_ocr;
+    }
+
+    public void setData_nascimento_ocr(String data_nascimento_ocr) {
+        this.data_nascimento_ocr = data_nascimento_ocr;
+    }
+
+    public String getData_primeira_habilitacao_ocr() {
+        return data_primeira_habilitacao_ocr;
+    }
+
+    public void setData_primeira_habilitacao_ocr(String data_primeira_habilitacao_ocr) {
+        this.data_primeira_habilitacao_ocr = data_primeira_habilitacao_ocr;
+    }
+
+    public String getData_ultima_emissao_ocr() {
+        return data_ultima_emissao_ocr;
+    }
+
+    public void setData_ultima_emissao_ocr(String data_ultima_emissao_ocr) {
+        this.data_ultima_emissao_ocr = data_ultima_emissao_ocr;
+    }
+
+    public String getData_validade_ocr() {
+        return data_validade_ocr;
+    }
+
+    public void setData_validade_ocr(String data_validade_ocr) {
+        this.data_validade_ocr = data_validade_ocr;
+    }
+
+    public Retrato getRetrato() {
+        return retrato;
+    }
+
+    public void setRetrato(Retrato retrato) {
+        this.retrato = retrato;
     }
 }

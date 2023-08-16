@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.apkdoandroid.datavalid_demo.model.PF_Facil_CDVResult;
 import com.apkdoandroid.datavalid_demo.model.PessoaFisica;
+import com.apkdoandroid.datavalid_demo.model.RespostaFacil_e_digital;
 import com.apkdoandroid.datavalid_demo.model.StatusResposta;
 import com.apkdoandroid.datavalid_demo.util.Constantes;
 import com.google.gson.JsonObject;
@@ -146,6 +148,99 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<PessoaFisica> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validacaoFacilCDV).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 422 PORQUE NÃO TA SENDO enviado A IMAGEM facil EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoa4FacialCDV).getAsJsonObject();
+                Call<PF_Facil_CDVResult> call = service.validacaoB_PessoaFisicaFacialCDV(json);
+                call.enqueue(new Callback<PF_Facil_CDVResult>() {
+                    @Override
+                    public void onResponse(Call<PF_Facil_CDVResult> call, Response<PF_Facil_CDVResult> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.message());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<PF_Facil_CDVResult> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validarFacil_e_Digital).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO enviado A IMAGEM facil EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoa5FacialDIGITAL).getAsJsonObject();
+                Call<RespostaFacil_e_digital> call = service.validacaoB_PessoaFisicaFacialDIGITAL(json);
+                call.enqueue(new Callback<RespostaFacil_e_digital>() {
+                    @Override
+                    public void onResponse(Call<RespostaFacil_e_digital> call, Response<RespostaFacil_e_digital> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.message());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<RespostaFacil_e_digital> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validarFacil_e_Digital).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO enviado A IMAGEM facil EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoa5FacialDIGITAL).getAsJsonObject();
+                Call<RespostaFacil_e_digital> call = service.validacaoB_PessoaFisicaFacialDIGITAL(json);
+                call.enqueue(new Callback<RespostaFacil_e_digital>() {
+                    @Override
+                    public void onResponse(Call<RespostaFacil_e_digital> call, Response<RespostaFacil_e_digital> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.message());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<RespostaFacil_e_digital> call, Throwable t) {
                         Log.d("Responde_Datavalid","Code: "+t.getMessage());
                         Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
