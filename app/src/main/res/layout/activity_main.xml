@@ -33,13 +33,15 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:text="Validação Digital" />
+
     <Button
+        android:id="@+id/validacaoFacial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:text="Button teste" />
+        android:text="Validação Facial" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -32,4 +32,7 @@ public interface DatavalidAPI {
      */
     @POST("validate/pf-digital")
     Call<PessoaFisica> validacaoB_PessoaFisicaDigital(@Body JsonObject json);
+
+    @POST("validate/pf-facial")
+    Call<PessoaFisica> validacaoB_PessoaFisicaFacial(@Body JsonObject json);
 }

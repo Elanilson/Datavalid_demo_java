@@ -97,4 +97,51 @@ public  class Constantes {
             "  }\n" +
             "}";
 
+    public static String pessoa3Facial = "{\n" +
+            "  \"key\": {\n" +
+            "    \"cpf\": \"25774435016\"\n" +
+            "  },\n" +
+            "  \"answer\": {\n" +
+            "    \"nome\": \"Maria Barbosa\",\n" +
+            "    \"data_nascimento\": \"2001-01-01\",\n" +
+            "    \"situacao_cpf\": \"regular\",\n" +
+            "    \"sexo\": \"F\",\n" +
+            "    \"nacionalidade\": 1,\n" +
+            "    \"cnh\": {\n" +
+            "      \"numero_registro\": \"0000001\",\n" +
+            "      \"categoria\": \"AB\",\n" +
+            "      \"codigo_situacao\": \"3\",\n" +
+            "      \"data_ultima_emissao\": \"2000-10-01\",\n" +
+            "      \"data_validade\": \"2005-12-10\",\n" +
+            "      \"data_primeira_habilitacao\": \"2000-10-31\",\n" +
+            "      \"registro_nacional_estrangeiro\": \"123456\",\n" +
+            "      \"possui_impedimento\": true,\n" +
+            "      \"observacoes\": \"ear\"\n" +
+            "    },\n" +
+            "    \"filiacao\": {\n" +
+            "      \"nome_mae\": \"Maria José\",\n" +
+            "      \"nome_pai\": \"José Maria\"\n" +
+            "    },\n" +
+            "    \"documento\": {\n" +
+            "      \"tipo\": 1,\n" +
+            "      \"numero\": \"000001\",\n" +
+            "      \"orgao_expedidor\": \"SSP\",\n" +
+            "      \"uf_expedidor\": \"DF\"\n" +
+            "    },\n" +
+            "    \"endereco\": {\n" +
+            "      \"logradouro\": \"Nome do Logradouro\",\n" +
+            "      \"numero\": \"0007\",\n" +
+            "      \"complemento\": \"APTO 2015\",\n" +
+            "      \"bairro\": \"Nome do Bairro\",\n" +
+            "      \"cep\": \"0000001\",\n" +
+            "      \"municipio\": \"Nome do municipio\",\n" +
+            "      \"uf\": \"DF\"\n" +
+            "    },\n" +
+            "    \"biometria_face\": {\n" +
+            "      \"formato\": \"PNG\",\n" +
+            "      \"base64\": \"PNG\"\n" +
+            "    }\n" +
+            "  }\n" +
+            "}";
+
 }

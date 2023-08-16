@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.validacaoDigital).setOnClickListener(new View.OnClickListener() {
 
             /**
-             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO A IMAGEM DE BIOMETRIA EM BASE64
+             * ELE TÁ RETORNANDO COD: 400 PORQUE NÃO TA SENDO enviado A IMAGEM DE BIOMETRIA EM BASE64
              * @param v The view that was clicked.
              */
             @Override
@@ -109,6 +109,37 @@ public class MainActivity extends AppCompatActivity {
                             Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
                         }else{
                             Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.errorBody());
+                            Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<PessoaFisica> call, Throwable t) {
+                        Log.d("Responde_Datavalid","Code: "+t.getMessage());
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+        findViewById(R.id.validacaoFacial).setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * ELE TÁ RETORNANDO COD: 422 PORQUE NÃO TA SENDO enviado A IMAGEM facil EM BASE64
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                JsonParser jsonParser = new JsonParser();
+                JsonObject json = jsonParser.parse(Constantes.pessoa3Facial).getAsJsonObject();
+                Call<PessoaFisica> call = service.validacaoB_PessoaFisicaFacial(json);
+                call.enqueue(new Callback<PessoaFisica>() {
+                    @Override
+                    public void onResponse(Call<PessoaFisica> call, Response<PessoaFisica> response) {
+                        if(response.isSuccessful()){
+                            // Log.d("Responde_Datavalid","Serviço funcionando");
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.body().toString());
+                        }else{
+                            Log.d("Responde_Datavalid","Code: "+response.code()+" - "+response.message());
                             Toast.makeText(MainActivity.this, response.message(), Toast.LENGTH_SHORT).show();
                         }
                     }
