@@ -1,8 +1,6 @@
 package com.apkdoandroid.datavalid_demo.model;
 
-import com.google.gson.annotations.SerializedName;
-
-public class CNH {
+public class CarteiraIdentificacao {
 
     /**
      * nome : false
@@ -41,9 +39,12 @@ public class CNH {
     private boolean data_ultima_emissao;
     private boolean data_primeira_habilitacao;
     private boolean data_validade;
+    private boolean data_nascimento;
     private boolean possui_impedimento;
     private boolean observacoes;
+    private boolean identidade;
     private double observacoes_similaridade;
+    private double identidade_similaridade;
     private String numero_registro_ocr;
     private String nome_ocr;
     private String identidade_ocr;
@@ -56,7 +57,7 @@ public class CNH {
 
     @Override
     public String toString() {
-        return "CNH{" +
+        return "CarteiraIdentificacao{" +
                 "nome=" + nome +
                 ", nome_similaridade=" + nome_similaridade +
                 ", numero_registro=" + numero_registro +
@@ -77,6 +78,31 @@ public class CNH {
                 ", data_validade_ocr='" + data_validade_ocr + '\'' +
                 ", retrato=" + retrato +
                 '}';
+    }
+
+
+    public boolean isIdentidade() {
+        return identidade;
+    }
+
+    public void setIdentidade(boolean identidade) {
+        this.identidade = identidade;
+    }
+
+    public boolean isData_nascimento() {
+        return data_nascimento;
+    }
+
+    public void setData_nascimento(boolean data_nascimento) {
+        this.data_nascimento = data_nascimento;
+    }
+
+    public double getIdentidade_similaridade() {
+        return identidade_similaridade;
+    }
+
+    public void setIdentidade_similaridade(double identidade_similaridade) {
+        this.identidade_similaridade = identidade_similaridade;
     }
 
     public boolean isNome() {

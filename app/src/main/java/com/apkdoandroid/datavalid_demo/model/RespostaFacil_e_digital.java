@@ -1,7 +1,5 @@
 package com.apkdoandroid.datavalid_demo.model;
 
-import java.util.List;
-
 public class RespostaFacil_e_digital {
 
     /**
@@ -13,7 +11,7 @@ public class RespostaFacil_e_digital {
      * sexo : true
      * nacionalidade : true
      * cnh_disponivel : true
-     * cnh : {"nome":true,"nome_similaridade":0,"numero_registro":true,"categoria":true,"codigo_situacao":true,"registro_nacional_estrangeiro":true,"data_ultima_emissao":true,"data_primeira_habilitacao":true,"data_validade":true,"possui_impedimento":true,"observacoes":true,"observacoes_similaridade":0}
+     * carteiraIdentificacao : {"nome":true,"nome_similaridade":0,"numero_registro":true,"categoria":true,"codigo_situacao":true,"registro_nacional_estrangeiro":true,"data_ultima_emissao":true,"data_primeira_habilitacao":true,"data_validade":true,"possui_impedimento":true,"observacoes":true,"observacoes_similaridade":0}
      * filiacao : {"nome_mae":true,"nome_mae_similaridade":0,"nome_pai":true,"nome_pai_similaridade":0}
      * documento : {"tipo":true,"numero":true,"numero_similaridade":0,"orgao_expedidor":true,"uf_expedidor":true}
      * endereco : {"logradouro":true,"logradouro_similaridade":0,"complemento":true,"complemento_similaridade":0,"numero":true,"numero_similaridade":0,"bairro":true,"bairro_similaridade":0,"cep":true,"municipio":true,"municipio_similaridade":0,"uf":true}
@@ -29,7 +27,7 @@ public class RespostaFacil_e_digital {
     private boolean sexo;
     private boolean nacionalidade;
     private boolean cnh_disponivel;
-    private CNH cnh;
+    private CarteiraIdentificacao cnh;
     private Filiacao filiacao;
     private Documento documento;
     private EnderecoB endereco;
@@ -101,11 +99,11 @@ public class RespostaFacil_e_digital {
         this.cnh_disponivel = cnh_disponivel;
     }
 
-    public CNH getCnh() {
+    public CarteiraIdentificacao getCnh() {
         return cnh;
     }
 
-    public void setCnh(CNH cnh) {
+    public void setCnh(CarteiraIdentificacao cnh) {
         this.cnh = cnh;
     }
 

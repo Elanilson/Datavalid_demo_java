@@ -1,8 +1,5 @@
 package com.apkdoandroid.datavalid_demo.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PessoaFisica {
 
 
@@ -21,7 +18,7 @@ public class PessoaFisica {
      * sexo : true
      * nacionalidade : true
      * cnh_disponivel : true
-     * cnh : {"nome":false,"nome_similaridade":0.38095238095238093,"numero_registro":false,"categoria":false,"codigo_situacao":true,"data_ultima_emissao":false,"data_primeira_habilitacao":false,"data_validade":false,"possui_impedimento":true,"observacoes":false,"observacoes_similaridade":0}
+     * carteiraIdentificacao : {"nome":false,"nome_similaridade":0.38095238095238093,"numero_registro":false,"categoria":false,"codigo_situacao":true,"data_ultima_emissao":false,"data_primeira_habilitacao":false,"data_validade":false,"possui_impedimento":true,"observacoes":false,"observacoes_similaridade":0}
      * filiacao : {"nome_mae":false,"nome_mae_similaridade":0.30000000000000004,"nome_pai":false,"nome_pai_similaridade":0.23809523809523814}
      * documento : {"tipo":true,"numero":false,"numero_similaridade":0,"orgao_expedidor":true,"uf_expedidor":false}
      * endereco : {"logradouro":false,"logradouro_similaridade":0.16666666666666663,"numero":false,"numero_similaridade":0,"bairro":false,"bairro_similaridade":0.47058823529411764,"cep":false,"municipio":false,"municipio_similaridade":0.17647058823529416,"uf":false}
@@ -37,7 +34,7 @@ public class PessoaFisica {
     private boolean sexo;
     private boolean nacionalidade;
     private boolean cnh_disponivel;
-    private CNH cnh;
+    private CarteiraIdentificacao cnh;
     private Filiacao filiacao;
     private Documento documento;
     private Endereco endereco;
@@ -137,11 +134,11 @@ public class PessoaFisica {
         this.cnh_disponivel = cnh_disponivel;
     }
 
-    public CNH getCnh() {
+    public CarteiraIdentificacao getCnh() {
         return cnh;
     }
 
-    public void setCnh(CNH cnh) {
+    public void setCnh(CarteiraIdentificacao cnh) {
         this.cnh = cnh;
     }
 

@@ -15,18 +15,23 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Matrix;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -132,15 +137,15 @@ public class AppActivity extends AppCompatActivity {
         binding.buttonEnviarDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                dialog.show();
 
                 // Suponha que você já carregou uma imagem no imageView
 
                 LogUtils.saveLogToFile(AppActivity.this, selfie);
                 LogUtils.saveLogToFile(AppActivity.this, doc_frente);
                 LogUtils.saveLogToFile(AppActivity.this, doc_verso);
-
-                enviarEndPoint(selfie,doc_frente,doc_verso);
+                keyBean.setCpf("02498501258");
+                enviarEndPointA(selfie,doc_frente,doc_verso);
             }
         });
 
@@ -159,11 +164,114 @@ public class AppActivity extends AppCompatActivity {
                 LogUtils.saveLogToFile(AppActivity.this, baseCNHFrente);
                 String base64CNHVErso = convertBitmapToBase64(bitmapCNHVErso);
                 LogUtils.saveLogToFile(AppActivity.this, base64CNHVErso);
-
+                keyBean.setCpf("11295395045");
                // enviarEndPoint(base64User,baseCNHFrente,base64CNHVErso);
-                enviarEndPointB(base64User,baseCNHFrente,base64CNHVErso);
+                enviarEndPointA(base64User,baseCNHFrente,base64CNHVErso);
             }
         });
+
+    }
+
+    private void showBottomDialog(PF_Facil_CDVResult pfDoc) {
+
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.bottomsheetlayout);
+
+        LinearLayout videoLayout = dialog.findViewById(R.id.layoutVideo);
+        LinearLayout shortsLayout = dialog.findViewById(R.id.layoutShorts);
+        LinearLayout liveLayout = dialog.findViewById(R.id.layoutLive);
+        ImageView cancelButton = dialog.findViewById(R.id.cancelButton);
+        TextView textVie_documento                       = dialog.findViewById(R.id.textdocumento);
+        TextView textVie_numero_registro                 = dialog.findViewById(R.id.textViewnumero_registro);
+        TextView textVie_numero_registro_ocr             = dialog.findViewById(R.id.textViewnumero_registro_ocr);
+        TextView textVie_nome                            = dialog.findViewById(R.id.textViewnome);
+        TextView textVie_nome_similaridade               = dialog.findViewById(R.id.textViewnome_similaridade);
+        TextView textVie_nome_ocr                        = dialog.findViewById(R.id.textViewnome_ocr);
+        TextView textVie_identidade                      = dialog.findViewById(R.id.textViewidentidade);
+        TextView textVie_identidade_similaridade         = dialog.findViewById(R.id.textViewidentidade_similaridade);
+        TextView textVie_identidade_ocr                  = dialog.findViewById(R.id.textViewidentidade_ocr);
+        TextView textVie_data_nascimento                 = dialog.findViewById(R.id.textViewdata_nascimento);
+        TextView textVie_data_nascimento_ocr             = dialog.findViewById(R.id.textViewdata_nascimento_ocr);
+        TextView textVie_data_primeira_habilitacao       = dialog.findViewById(R.id.textViewdata_primeira_habilitacao);
+        TextView textVie_data_primeira_habilitacao_ocr   = dialog.findViewById(R.id.textViewdata_primeira_habilitacao_ocr);
+        TextView textVie_data_ultima_emissao             = dialog.findViewById(R.id.textViewdata_ultima_emissao);
+        TextView textVie_data_ultima_emissao_ocr         = dialog.findViewById(R.id.textViewdata_ultima_emissao_ocr);
+        TextView textVie_data_validade                   = dialog.findViewById(R.id.textViewdata_validade);
+        TextView textVie_data_validade_ocr               = dialog.findViewById(R.id.textViewdata_validade_ocr);
+        TextView textVie_disponivel_retrato              = dialog.findViewById(R.id.textViewdisponivelretrato);
+        TextView textVie_probabilidade_retrato           = dialog.findViewById(R.id.textViewprobabilidaderetrato);
+        TextView textVie_similaridade_retrato            = dialog.findViewById(R.id.textViewsimilaridaderetrato);
+        TextView textVie_disponivel_biometria_face       = dialog.findViewById(R.id.textViewdisponivelbiometria_face);
+        TextView textVie_probabilidade_biometria_face    = dialog.findViewById(R.id.textViewprobabilidadebiometria_face);
+        TextView textVie_similaridade_biometria_face     = dialog.findViewById(R.id.textViewsimilaridadebiometria_face);
+
+        textVie_documento                       .setText("Documento: "+pfDoc.getDocumento());
+        textVie_numero_registro                 .setText("NumeroReg: "+pfDoc.getCnh().isNumero_registro());
+        textVie_numero_registro_ocr             .setText("Numero registro_ocr: \n "+pfDoc.getCnh().getNumero_registro_ocr());
+        textVie_nome                            .setText("nome: "+pfDoc.getCnh().isNome());
+        textVie_nome_similaridade               .setText("Nome similaridade:  \n "+pfDoc.getCnh().getNome_similaridade());
+        textVie_nome_ocr                        .setText("Nome_ocr: \n "+pfDoc.getCnh().getNome_ocr());
+        textVie_identidade                      .setText("Identidade:  "+pfDoc.getCnh().isIdentidade());
+        textVie_identidade_similaridade         .setText("Identidade similaridade: \n "+pfDoc.getCnh().getIdentidade_similaridade());
+        textVie_identidade_ocr                  .setText("Identidade_ocr:  \n "+pfDoc.getCnh().getIdentidade_ocr());
+        textVie_data_nascimento                 .setText("Data nascimento: \n "+pfDoc.getCnh().isData_nascimento());
+        textVie_data_nascimento_ocr             .setText("Data nascimento_ocr: \n "+pfDoc.getCnh().getData_nascimento_ocr());
+        textVie_data_primeira_habilitacao       .setText("Data primeira habilitacao: \n "+pfDoc.getCnh().isData_primeira_habilitacao());
+        textVie_data_primeira_habilitacao_ocr   .setText("Data primeira habilitacao_ocr:  \n "+pfDoc.getCnh().getData_primeira_habilitacao_ocr());
+        textVie_data_ultima_emissao             .setText("Data ultima emissao: \n "+pfDoc.getCnh().isData_ultima_emissao());
+        textVie_data_ultima_emissao_ocr         .setText("Data ultima emissao_ocr: \n "+pfDoc.getCnh().getData_ultima_emissao_ocr());
+        textVie_data_validade                   .setText("data validade: "+pfDoc.getCnh().isData_validade());
+        textVie_data_validade_ocr               .setText("Data validade_ocr: \n "+pfDoc.getCnh().getData_validade_ocr());
+        textVie_disponivel_retrato              .setText("Disponivel: "+pfDoc.getCnh().getRetrato().isDisponivel());
+        textVie_probabilidade_retrato           .setText("Probabilidade: \n "+pfDoc.getCnh().getRetrato().getProbabilidade());
+        textVie_similaridade_retrato            .setText("Similaridade: \n "+pfDoc.getCnh().getRetrato().getSimilaridade());
+        textVie_disponivel_biometria_face       .setText("Disponivel: "+pfDoc.getBiometria_face().isDisponivel());
+        textVie_probabilidade_biometria_face    .setText("Probabilidade: \n "+pfDoc.getBiometria_face().getProbabilidade());
+        textVie_similaridade_biometria_face     .setText("Similaridade: \n"+pfDoc.getBiometria_face().getSimilaridade());
+
+        videoLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+                Toast.makeText(AppActivity.this,"Upload a Video is clicked",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        shortsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+                Toast.makeText(AppActivity.this,"Create a short is Clicked",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        liveLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+                Toast.makeText(AppActivity.this,"Go live is Clicked",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
 
     }
 
@@ -211,7 +319,99 @@ public class AppActivity extends AppCompatActivity {
     private void dialogProgressBarHider(){
         progressBar.setVisibility(View.GONE);
     }
+    private void enviarEndPointA(String biometricaFacial, String docFrente, String docVerso){
+        // JsonParser jsonParser = new JsonParser();
+        // JsonObject json = jsonParser.parse(Constantes.pessoa6CDV).getAsJsonObject();
+        //keyBean.setCpf("11295395045");
 
+        //documentoBean.setBase64(doc_frente);
+        answerBean.setDocumento(new DocumentoBean("JPG",docFrente));
+        answerBean.setDocumento_verso(new DocumentoBean("JPG",docVerso));
+        answerBean.setBiometria_face(new DocumentoBean("JPG",biometricaFacial));
+        request.setKey(keyBean);
+        request.setAnswer(answerBean);
+        // Log.d("Responde_Datavalid",request.getAnswer().getDocumento().getBase64());
+        Call<PF_Facil_CDVResult>  call = service.validacaoB_PessoaFisicaFacialCDV(request);
+        call.enqueue(new Callback<PF_Facil_CDVResult>() {
+            @Override
+            public void onResponse(Call<PF_Facil_CDVResult> call, Response<PF_Facil_CDVResult> response) {
+                dialogProgressBarHider();
+                if(response.isSuccessful() && response.body() != null){
+                    dialog.dismiss();
+
+                    showBottomDialog(response.body());
+
+
+                    Log.d("Responde_Datavalid","1Code: "+response.code()+" - "+response.body().toString());
+                }else{
+                    String errorBodyString = null;
+                    try {
+                         errorBodyString = response.errorBody().source().readUtf8();
+                      //  errorBodyString = response.errorBody().toString();
+
+                        // Converter a string JSON em um array JSON
+                        JSONArray jsonArray = new JSONArray(errorBodyString);
+                        String message = "";
+                        String code = "";
+
+                        // Percorrer o array e extrair os objetos individuais
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+
+                            // Verificar se o campo "id" existe no objeto JSON
+                            if (jsonObject.has("code")) {
+                                // Extrair os valores dos campos
+                                code = jsonObject.getString("code");
+
+                            }
+                            if(jsonObject.has("message")) {
+                                // Extrair os valores dos campos
+                                message = jsonObject.getString("message");
+                            }
+
+                            // Fazer o que quiser com os valores obtidos
+                            // Por exemplo, exibir no log
+                            Log.d("Responde_Datavalid", "Item " + code + ": " + message);
+                        }
+
+                        String msg = "Code: "+code+" \n"+
+                                "Message: "+message;
+
+                        dialogMensagem(msg);
+
+                        Log.d("Responde_Datavalid","2Code: "+response.code()+" - "+errorBodyString.toString() );
+                        //  Log.d("Responde_Datavalid","2Code: "+response.code()+" - "+errorBodyString );
+                   /* } catch (IOException e) {
+                        dialogMensagem(e.getMessage());
+                        Log.d("Responde_Datavalid","2Code: "+e.getMessage() );*/
+
+                    } catch (JSONException e) {
+                        String msgErro = "cannot be converted to JSONArray";
+
+                        dialogMensagem("Ops! errorBody \n "+e.getMessage());
+
+                        Log.d("Responde_Datavalid","JSONException "+e.getMessage() );
+                    }catch (RuntimeException e){
+                        dialogMensagem("Ops! Algo deu errado runtimeRuntime. \n "+e.getMessage());
+                        Log.d("Responde_Datavalid","RuntimeException "+e.getMessage() );
+                    }catch (Exception e){
+                        dialogMensagem("Ops! Algo deu errado. \n "+e.getMessage());
+                        Log.d("Responde_Datavalid","Exception "+e.getMessage() );
+                    }
+
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<PF_Facil_CDVResult> call, Throwable t) {
+                dialogProgressBarHider();
+                dialogMensagem("Ops! Algo deu errado. \n  Tente novamente!  \n Erro: "+t.getMessage());
+                Log.d("Responde_Datavalid","Falha "+t.getMessage() );
+                Toast.makeText(AppActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
     private void enviarEndPointB(String biometricaFacial, String docFrente, String docVerso){
         // JsonParser jsonParser = new JsonParser();
         // JsonObject json = jsonParser.parse(Constantes.pessoa6CDV).getAsJsonObject();

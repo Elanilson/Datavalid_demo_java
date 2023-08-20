@@ -2,7 +2,7 @@ package com.apkdoandroid.datavalid_demo.model;
 
 public class PF_Facil_CDVResult {
     private String documento;
-    private CNH cnh;
+    private CarteiraIdentificacao cnh;
     private BiometriaFacial biometria_face;
     /**
      * message : Imagem da face não encontrada nas bases
@@ -22,7 +22,7 @@ public class PF_Facil_CDVResult {
     public String toString() {
         return "PF_Facil_CDVResult{" +
                 "documento='" + documento + '\'' +
-                ", cnh=" + cnh +
+                ", carteiraIdentificacao=" + cnh +
                 ", biometria_face=" + biometria_face +
                 ", message='" + message + '\'' +
                 ", code='" + code + '\'' +
@@ -38,11 +38,12 @@ public class PF_Facil_CDVResult {
         this.documento = documento;
     }
 
-    public CNH getCnh() {
+
+    public CarteiraIdentificacao getCnh() {
         return cnh;
     }
 
-    public void setCnh(CNH cnh) {
+    public void setCnh(CarteiraIdentificacao cnh) {
         this.cnh = cnh;
     }
 

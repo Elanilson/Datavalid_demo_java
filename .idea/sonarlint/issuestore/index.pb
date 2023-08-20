@@ -7,8 +7,6 @@ Dapp/src/main/java/com/apkdoandroid/datavalid_demo/model/Digital.java,9\5\9505a
 Mapp/src/main/java/com/apkdoandroid/datavalid_demo/model/BiometriaDigital.java,5\6\5615f0183bb67b871c8bca19b140ed71bb1072f1
 u
 Eapp/src/main/java/com/apkdoandroid/datavalid_demo/model/Endereco.java,f\d\fd8c8e592aa673f87715abbdcd688063a1869cbf
-y
-Iapp/src/main/java/com/apkdoandroid/datavalid_demo/model/PessoaFisica.java,0\d\0d89e2537ad514f74a7124dde31136477c90ef6b
 {
 Kapp/src/main/java/com/apkdoandroid/datavalid_demo/model/CNAE_principal.java,4\1\4122d25af85cb3497fd4dd187a9e3a6de73a14e7
 v
@@ -21,8 +19,6 @@ Eapp/src/main/java/com/apkdoandroid/datavalid_demo/model/Telefone.java,e\7\e70a
 Kapp/src/main/java/com/apkdoandroid/datavalid_demo/model/StatusResposta.java,7\7\7735043db28241f9371d54ab2a527fba445e3cfd
 }
 Mapp/src/main/java/com/apkdoandroid/datavalid_demo/model/NaturezaJuridica.java,7\d\7d07423c966d812113fd8508f199752da21820e5
-„
-Tapp/src/main/java/com/apkdoandroid/datavalid_demo/model/RespostaFacil_e_digital.java,b\b\bb7459181d553f91bd7e8d97cf964e2f6f23f85a
 {
 Kapp/src/main/java/com/apkdoandroid/datavalid_demo/model/PessoaJuridica.java,7\6\76a2e719fa17dc77da19e278c5a70acf6d3493b0
 v
@@ -71,7 +67,5 @@ u
 Eapp/src/main/java/com/apkdoandroid/datavalid_demo/RetrofitClient.java,0\2\0241b6d70fa03087471fc529bc7f69205861de59
 |
 Lapp/src/main/java/com/apkdoandroid/datavalid_demo/model/BiometriaFacial.java,b\1\b1d9852bb13e3ef7cfb1553d4e63f9225757b1aa
-t
-Dapp/src/main/java/com/apkdoandroid/datavalid_demo/model/Retrato.java,c\8\c8c5b655128b39bb856a653cb2423487eba793f7
 p
 @app/src/main/java/com/apkdoandroid/datavalid_demo/model/CNH.java,7\c\7c664f61bcb5150048358de95ff127a53c9b03fd
