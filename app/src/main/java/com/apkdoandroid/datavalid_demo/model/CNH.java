@@ -53,6 +53,32 @@ public class CNH {
     private String data_validade_ocr;
     private Retrato retrato;
 
+
+    @Override
+    public String toString() {
+        return "CNH{" +
+                "nome=" + nome +
+                ", nome_similaridade=" + nome_similaridade +
+                ", numero_registro=" + numero_registro +
+                ", categoria=" + categoria +
+                ", codigo_situacao=" + codigo_situacao +
+                ", data_ultima_emissao=" + data_ultima_emissao +
+                ", data_primeira_habilitacao=" + data_primeira_habilitacao +
+                ", data_validade=" + data_validade +
+                ", possui_impedimento=" + possui_impedimento +
+                ", observacoes=" + observacoes +
+                ", observacoes_similaridade=" + observacoes_similaridade +
+                ", numero_registro_ocr='" + numero_registro_ocr + '\'' +
+                ", nome_ocr='" + nome_ocr + '\'' +
+                ", identidade_ocr='" + identidade_ocr + '\'' +
+                ", data_nascimento_ocr='" + data_nascimento_ocr + '\'' +
+                ", data_primeira_habilitacao_ocr='" + data_primeira_habilitacao_ocr + '\'' +
+                ", data_ultima_emissao_ocr='" + data_ultima_emissao_ocr + '\'' +
+                ", data_validade_ocr='" + data_validade_ocr + '\'' +
+                ", retrato=" + retrato +
+                '}';
+    }
+
     public boolean isNome() {
         return nome;
     }

@@ -1,0 +1,22 @@
+
+…
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "base64Image".(Áìîàøÿÿÿÿ8²ÿÛô 1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ò’çÎ8‰õÜô 1
+^
+java:S1854!"<Remove this useless assignment to local variable "mimeType".(‚óñúÿÿÿÿ8êÿÛô 1
+L
+java:S1172"/Remove this unused method parameter "activity".(ƒôÆÚ8ëÿÛô 1
+O
+java:S1481!"-Remove this unused "mimeType" local variable.(‚óñúÿÿÿÿ8ëÿÛô 1
+I
+java:S18743",Remove this use of "WEBP"; it is deprecated.(ˆËÍã8íÿÛô 1
+F
+java:S1128	")Remove this unused import 'java.io.File'.(†Ğ¥Å8òÿÛô 1
+Q
+java:S1128
+"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8¤õÜô 1
+Q
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg8òÿÛô 1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8òÿÛô 1

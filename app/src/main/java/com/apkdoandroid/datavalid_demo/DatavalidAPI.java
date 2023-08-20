@@ -3,8 +3,10 @@ package com.apkdoandroid.datavalid_demo;
 import com.apkdoandroid.datavalid_demo.model.PF_Facil_CDVResult;
 import com.apkdoandroid.datavalid_demo.model.PessoaFisica;
 import com.apkdoandroid.datavalid_demo.model.PessoaJuridica;
+import com.apkdoandroid.datavalid_demo.model.RequestPfFacialCDV;
 import com.apkdoandroid.datavalid_demo.model.RespostaFacil_e_digital;
 import com.apkdoandroid.datavalid_demo.model.StatusResposta;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import retrofit2.Call;
@@ -51,6 +53,11 @@ public interface DatavalidAPI {
      */
     @POST("validate/pf-facial-cdv")
     Call<PF_Facil_CDVResult> validacaoB_PessoaFisicaFacialCDV(@Body JsonObject json);
+    //apenas muda o tipo po parametro utilizado
+    @POST("validate/pf-facial-cdv")
+    Call<PF_Facil_CDVResult> validacaoB_PessoaFisicaFacialCDV(@Body RequestPfFacialCDV request);
+    @POST("validate/pf-facial-cdv")
+    Call<JsonElement> validacaoPessoaFisicaFacialCDV(@Body RequestPfFacialCDV request);
 
     /**
      * Validação das informações básicas de uma pessoa física e a biometria da face e das impressões digitais correspondentes
@@ -67,4 +74,8 @@ public interface DatavalidAPI {
      */
     @POST("validate/pj-basica")
     Call<PessoaJuridica> validacaoBasicaPessoaJuridica(@Body JsonObject json);
+
+
+
+
 }

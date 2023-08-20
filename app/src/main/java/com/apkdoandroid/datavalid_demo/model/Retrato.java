@@ -13,6 +13,15 @@ public class Retrato {
     private String probabilidade;
     private double similaridade;
 
+    @Override
+    public String toString() {
+        return "Retrato{" +
+                "disponivel=" + disponivel +
+                ", probabilidade='" + probabilidade + '\'' +
+                ", similaridade=" + similaridade +
+                '}';
+    }
+
     public boolean isDisponivel() {
         return disponivel;
     }

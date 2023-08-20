@@ -1,0 +1,51 @@
+
+d
+java:S1192†"FDefine a constant instead of duplicating this literal "UTF-8" 9 times.( ğµñ8È‡”î 1
+u	java:S135I"YReduce the total number of break and continue statements in this loop to use at most one.(Øæ¥Â8È‡”î 1
+a
+java:S2583"DChange this condition so that it does not always evaluate to "false"(œ•‹m8‚Œ”î 1
+W
+java:S1854+"5Remove this useless assignment to local variable "i".(Õ‚÷®şÿÿÿÿ8œŒ”î 1
+R
+java:S18541"5Remove this useless assignment to local variable "i".(ö˜…¡8œŒ”î 1
+o
+java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¨•Ô8œŒ”î 1
+a
+java:S1659H"?Declare "b2" and all following declarations on a separate line.(ùìÃ»üÿÿÿÿ8­Œ”î 1
+j	java:S100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¯ï×8µŒ”î 1
+W
+java:S4719†"9Replace charset name argument with StandardCharsets.UTF_8( ğµñ8µŒ”î 1
+D
+java:S1168ˆ"&Return an empty array instead of null.(¥¹ï8ÅŒ”î 1
+W
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ÍÇÍË8ÅŒ”î 1
+D
+java:S1168"&Return an empty array instead of null.(¥¹ï8ÅŒ”î 1
+\
+java:S4719–"9Replace charset name argument with StandardCharsets.UTF_8(Üš®äùÿÿÿÿ8ÅŒ”î 1
+\
+java:S4719–"9Replace charset name argument with StandardCharsets.UTF_8(Üš®äùÿÿÿÿ8ÅŒ”î 1
+D
+java:S1168˜"&Return an empty array instead of null.(¥¹ï8ÅŒ”î 1
+W
+java:S4719¾"9Replace charset name argument with StandardCharsets.UTF_8(€‹ ¢8ÔŒ”î 1
+D
+java:S1168À"&Return an empty array instead of null.(¥¹ï8ÔŒ”î 1
+\
+java:S4719Ğ"9Replace charset name argument with StandardCharsets.UTF_8(¯èà¿ùÿÿÿÿ8äŒ”î 1
+\
+java:S4719Ú"9Replace charset name argument with StandardCharsets.UTF_8(¯èà¿ùÿÿÿÿ8äŒ”î 1
+\
+java:S4719ä"9Replace charset name argument with StandardCharsets.UTF_8(¯èà¿ùÿÿÿÿ8äŒ”î 1
+\
+java:S4719î"9Replace charset name argument with StandardCharsets.UTF_8(¯èà¿ùÿÿÿÿ8äŒ”î 1
+B
+java:S1659ü"Declare "q" on a separate line.(µÏşÿÿÿÿ8äŒ”î 1
+[
+java:S1659ı">Declare "y" and all following declarations on a separate line.(îÙ´z8äŒ”î 1
+B
+java:S1659•"Declare "q" on a separate line.(µÏşÿÿÿÿ8ôŒ”î 1
+a
+java:S1659–">Declare "y" and all following declarations on a separate line.(×ÔŸÔúÿÿÿÿ8ôŒ”î 1
+D
+java:S1168Ğ"&Return an empty array instead of null.(¥¹ï8ƒ”î 1

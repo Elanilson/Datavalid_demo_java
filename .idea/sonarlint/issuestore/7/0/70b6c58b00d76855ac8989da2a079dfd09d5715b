@@ -1,0 +1,56 @@
+
+u
+java:S1192]"SDefine a constant instead of duplicating this literal "Responde_Datavalid" 4 times.(ßö¶ÿûÿÿÿÿ8«ñ™ô 1
+W
+java:S1141w"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8²ñ™ô 1
+E
+java:S1604O"(Make this anonymous inner class a lambda(å•œ‹8²ñ™ô 1
+J
+java:S1604V"(Make this anonymous inner class a lambda(‹½Øçıÿÿÿÿ8³ñ™ô 1
+
+java:S1488—"aImmediately return this expression instead of assigning it to the temporary variable "imgString".(àŸ±¸8³ñ™ô 1
+p
+java:S2095¦"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Éâôıÿÿÿÿ8é“¬ô 1
+~
+java:S1450@"\Remove the "convertButton" field and declare it as a local variable in the relevant methods.(ºï’¬şÿÿÿÿ8üñ™ô 1
+x
+java:S1450?"[Remove the "selectButton" field and declare it as a local variable in the relevant methods.(òªá²8üñ™ô 1
+X	java:S125Z"<This block of commented-out lines of code should be removed.(“¬üê8‰ò™ô 1
+[
+java:S1874f">Remove this use of "startActivityForResult"; it is deprecated.(ÍĞŠ”8ò™ô 1
+g
+java:S1874j"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8ò™ô 1
+Y	java:S125¡"<This block of commented-out lines of code should be removed.(§º“§8•ò™ô 1
+[	java:S106»"9Replace this use of System.out or System.err by a logger.(ßÒùÿÿÿÿÿ8˜ò™ô 1
+:
+java:S1128"Remove this duplicated import.(³ğ‹G8™ò™ô 1
+:
+java:S1128"Remove this duplicated import.(¾ì8™ò™ô 1
+@
+java:S1128!"Remove this duplicated import.(°şÊóøÿÿÿÿ8™ò™ô 1
+:
+java:S1128""Remove this duplicated import.(ìÔ×[8™ò™ô 1
+:
+java:S1128)"Remove this duplicated import.(³ğ‹G8™ò™ô 1
+:
+java:S1128*"Remove this duplicated import.(¾ì8™ò™ô 1
+@
+java:S1128+"Remove this duplicated import.(âàºÍûÿÿÿÿ8™ò™ô 1
+@
+java:S1128,"Remove this duplicated import.(òêû‘ıÿÿÿÿ8™ò™ô 1
+@
+java:S1128."Remove this duplicated import.(°şÊóøÿÿÿÿ8™ò™ô 1
+:
+java:S1128/"Remove this duplicated import.(ìÔ×[8™ò™ô 1
+@
+java:S11280"Remove this duplicated import.(Ø½­äşÿÿÿÿ8™ò™ô 1
+@
+java:S11281"Remove this duplicated import.(²òıÿÿÿÿ8™ò™ô 1
+@
+java:S11282"Remove this duplicated import.(ú¯ëàüÿÿÿÿ8™ò™ô 1
+@
+java:S11283"Remove this duplicated import.(„Ë‚ˆÿÿÿÿÿ8™ò™ô 1
+:
+java:S11285"Remove this duplicated import.(Î‡È8™ò™ô 1
+X
+java:S1144‹":Remove this unused private "convertBitmapToBase64" method.(İìÍ8™ò™ô 1

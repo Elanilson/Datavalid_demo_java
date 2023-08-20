@@ -1,0 +1,24 @@
+
+†
+java:S1488U"dImmediately return this expression instead of assigning it to the temporary variable "encodedImage".(ÂáÐ ÿÿÿÿÿ8Ï‚²î 1
+†
+java:S1488j"dImmediately return this expression instead of assigning it to the temporary variable "encodedImage".(ÂáÐ ÿÿÿÿÿ8Ï‚²î 1
+†
+java:S1488|"dImmediately return this expression instead of assigning it to the temporary variable "encodedImage".(ÜŠÉ³þÿÿÿÿ8Ï‚²î 1
+|
+java:S1488¥"^Immediately return this expression instead of assigning it to the temporary variable "bitmap".(„ãžÈ8Ï‚²î 1
+|
+java:S1488°"^Immediately return this expression instead of assigning it to the temporary variable "bitmap".(÷é­Œ8Ï‚²î 1
+Y
+java:S2589v"7Remove this expression which always evaluates to "true"(Ï›úîúÿÿÿÿ8Þ‚²î 1
+j	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰òÄ·8Þ‚²î 1
+F
+java:S1659"$Declare "height" on a separate line.( —¿¼ÿÿÿÿÿ8Þ‚²î 1
+V
+java:S2168'"9Remove this dangerous instance of double-checked locking.(Ÿ²Úð8î‚²î 1
+\
+java:S1854x":Remove this useless assignment to local variable "bitmap".(×ý¥Êüÿÿÿÿ8þ‚²î 1
+]
+java:S1117‚":Rename "height" which hides the field declared at line 20.(ØäÁ–üÿÿÿÿ8þ‚²î 1
+\
+java:S1117ƒ"9Rename "width" which hides the field declared at line 20.(çì‘Éúÿÿÿÿ8þ‚²î 1

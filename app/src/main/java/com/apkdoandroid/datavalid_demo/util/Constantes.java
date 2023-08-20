@@ -250,4 +250,24 @@ public  class Constantes {
             "    \"capital_social\": 0\n" +
             "  }\n" +
             "}";
+
+    public static String pessoa6CDV = "{\n" +
+            "  \"key\": {\n" +
+            "    \"cpf\": \"25774435016\"\n" +
+            "  },\n" +
+            "  \"answer\": {\n" +
+            "    \"documento\": {\n" +
+            "      \"formato\": \"JPG\",\n" +
+            "      \"base64\": \"\"\n" +
+            "    },\n" +
+            "    \"documento_verso\": {\n" +
+            "      \"formato\": \"JPG\",\n" +
+            "      \"base64\": \"\"\n" +
+            "    },\n" +
+            "    \"biometria_face\": {\n" +
+            "      \"formato\": \"PNG\",\n" +
+            "      \"base64\": \"\"\n" +
+            "    }\n" +
+            "  }\n" +
+            "}";
 }

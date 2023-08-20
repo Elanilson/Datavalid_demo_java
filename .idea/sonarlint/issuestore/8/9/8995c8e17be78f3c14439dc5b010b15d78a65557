@@ -1,0 +1,164 @@
+
+v
+java:S1192!"TDefine a constant instead of duplicating this literal "      \"tipo\": 1,
+" 4 times.(Ôñ€«øÿÿÿÿ8°’éŸ 1
+„
+java:S1192*"gDefine a constant instead of duplicating this literal "      \"bairro\": \"Nome do Bairro\",
+" 5 times.(•¤†õ8°’éŸ 1
+†
+java:S1192"dDefine a constant instead of duplicating this literal "    \"situacao_cpf\": \"regular\",
+" 4 times.(Õç˜‹úÿÿÿÿ8°’éŸ 1
+
+java:S1192+"]Define a constant instead of duplicating this literal "      \"cep\": \"0000001\",
+" 5 times.(ãÖš³üÿÿÿÿ8°’éŸ 1
+‚
+java:S1192$"`Define a constant instead of duplicating this literal "      \"uf_expedidor\": \"DF\"
+" 4 times.(…íİšøÿÿÿÿ8°’éŸ 1
+r
+java:S1192-"VDefine a constant instead of duplicating this literal "      \"uf\": \"DF\"
+" 5 times.(½„ás8°’éŸ 1
+
+java:S1192"bDefine a constant instead of duplicating this literal "    \"nome\": \"Maria Barbosa\",
+" 4 times.(ùõû8°’éŸ 1
+“
+java:S1192"vDefine a constant instead of duplicating this literal "      \"registro_nacional_estrangeiro\": \"123456\",
+" 4 times.(äôÇ¡8°’éŸ 1
+s
+java:S1192 "VDefine a constant instead of duplicating this literal "    \"documento\": {
+" 6 times.(Ò¼á8°’éŸ 1
+r
+java:S1192"PDefine a constant instead of duplicating this literal "    \"cnh\": {
+" 4 times.(şæ÷èûÿÿÿÿ8°’éŸ 1
+
+java:S1192"pDefine a constant instead of duplicating this literal "      \"data_ultima_emissao\": \"2000-10-01\",
+" 4 times.(¸›¤8°’éŸ 1
+‚
+java:S1192"eDefine a constant instead of duplicating this literal "      \"possui_impedimento\": true,
+" 4 times.(Öœ¨8°’éŸ 1
+‡
+java:S1192"eDefine a constant instead of duplicating this literal "      \"nome_pai\": \"JosÃ© Maria\"
+" 4 times.(í¸Àüÿÿÿÿ8°’éŸ 1
+{
+java:S1192"]Define a constant instead of duplicating this literal "      \"formato\": \"PNG\",
+" 3 times.(ÑË†‚8ìúˆ¢ 1
+ˆ
+java:S1192"fDefine a constant instead of duplicating this literal "      \"nome_mae\": \"Maria JosÃ©\",
+" 4 times.(šÄÓ½ıÿÿÿÿ8°’éŸ 1
+b
+java:S1192/"EDefine a constant instead of duplicating this literal "  }
+" 7 times.(ÚÜƒ8°’éŸ 1
+r
+java:S1192"UDefine a constant instead of duplicating this literal "    \"filiacao\": {
+" 4 times.(³ÌÒ8°’éŸ 1
+s
+java:S1192"QDefine a constant instead of duplicating this literal "  \"answer\": {
+" 7 times.(†›õ‡úÿÿÿÿ8°’éŸ 1
+w
+java:S1192&"UDefine a constant instead of duplicating this literal "    \"endereco\": {
+" 5 times.(è¡Îìùÿÿÿÿ8°’éŸ 1
+€
+java:S1192"^Define a constant instead of duplicating this literal "      \"categoria\": \"AB\",
+" 4 times.(±Ú¬üÿÿÿÿ8°’éŸ 1
+x
+java:S1192"VDefine a constant instead of duplicating this literal "    \"sexo\": \"F\",
+" 4 times.(à“Áˆûÿÿÿÿ8°’éŸ 1
+f
+java:S1192"IDefine a constant instead of duplicating this literal "    },
+" 23 times.(¥ÁÊÁ8°’éŸ 1
+Œ
+java:S1192"jDefine a constant instead of duplicating this literal "    \"data_nascimento\": \"2001-01-01\",
+" 4 times.(Ãº¤øÿÿÿÿ8°’éŸ 1
+p
+java:S1192"NDefine a constant instead of duplicating this literal "  \"key\": {
+" 7 times.(Ì×“ïüÿÿÿÿ8°’éŸ 1
+‘
+java:S1192'"oDefine a constant instead of duplicating this literal "      \"logradouro\": \"Nome do Logradouro\",
+" 5 times.(ƒñ™„øÿÿÿÿ8°’éŸ 1
+d
+java:S1192."GDefine a constant instead of duplicating this literal "    }
+" 4 times.(ÚÜƒ8°’éŸ 1
+Œ
+java:S1192"jDefine a constant instead of duplicating this literal "      \"data_validade\": \"2005-12-10\",
+" 4 times.(¶‘—´ùÿÿÿÿ8°’éŸ 1
+c
+java:S1192
+"FDefine a constant instead of duplicating this literal "  },
+" 7 times.(¥ÁÊÁ8°’éŸ 1
+|
+java:S1192""_Define a constant instead of duplicating this literal "      \"numero\": \"000001\",
+" 4 times.(ŞˆœÂ8°’éŸ 1
+}
+java:S1192"`Define a constant instead of duplicating this literal "      \"observacoes\": \"ear\"
+" 4 times.(¤äÚÖ8°’éŸ 1
+{
+java:S1192	"^Define a constant instead of duplicating this literal "    \"cpf\": \"25774435016\"
+" 6 times.(å›ã„8°’éŸ 1
+˜
+java:S1192"vDefine a constant instead of duplicating this literal "      \"data_primeira_habilitacao\": \"2000-10-31\",
+" 4 times.(şÒíúÿÿÿÿ8¿’éŸ 1
+{
+java:S1192…"XDefine a constant instead of duplicating this literal "      \"base64\": \"\"
+" 3 times.(µôô¬üÿÿÿÿ8ìúˆ¢ 1
+w
+java:S1192"[Define a constant instead of duplicating this literal "    \"nacionalidade\": 1,
+" 4 times.(ÆÜÕq8¿’éŸ 1
+€
+java:S1192š"]Define a constant instead of duplicating this literal "      \"formato\": \"JPG\",
+" 3 times.(á©óúÿÿÿÿ8ìúˆ¢ 1
+‡
+java:S1192#"eDefine a constant instead of duplicating this literal "      \"orgao_expedidor\": \"SSP\",
+" 4 times.(œ‡ĞÓıÿÿÿÿ8¿’éŸ 1
+€
+java:S1192"cDefine a constant instead of duplicating this literal "      \"codigo_situacao\": \"3\",
+" 4 times.(ïû¸8¿’éŸ 1
+
+java:S1192,"mDefine a constant instead of duplicating this literal "      \"municipio\": \"Nome do municipio\",
+" 5 times.(ÿòõ¥øÿÿÿÿ8¿’éŸ 1
+„
+java:S1192)"gDefine a constant instead of duplicating this literal "      \"complemento\": \"APTO 2015\",
+" 5 times.(à¯‰à8¿’éŸ 1
+
+java:S1192("]Define a constant instead of duplicating this literal "      \"numero\": \"0007\",
+" 5 times.(“Áñóúÿÿÿÿ8¿’éŸ 1
+~
+java:S1192Œ"[Define a constant instead of duplicating this literal "    \"biometria_face\": {
+" 3 times.(ï­‚õûÿÿÿÿ8ìúˆ¢ 1
+†
+java:S1192"iDefine a constant instead of duplicating this literal "      \"numero_registro\": \"0000001\",
+" 4 times.(ÎõÄ›8¿’éŸ 1
+q
+java:S1104"TMake base_url a static final constant or non-public and provide accessors if needed.(…ßã£8¿’éŸ 1
+u
+java:S1104"SMake pessoa1 a static final constant or non-public and provide accessors if needed.(ÚÅô”üÿÿÿÿ8¿’éŸ 1
+|
+java:S11042"ZMake pessoa2Digital a static final constant or non-public and provide accessors if needed.(¼ˆÉÍùÿÿÿÿ8¿’éŸ 1
+{
+java:S1104d"YMake pessoa3Facial a static final constant or non-public and provide accessors if needed.(ˆÈ·úÿÿÿÿ8¿’éŸ 1
+
+java:S1104”"\Make pessoa4FacialCDV a static final constant or non-public and provide accessors if needed.(ı™ŸÇşÿÿÿÿ8¿’éŸ 1
+ƒ
+java:S1104 "`Make pessoa5FacialDIGITAL a static final constant or non-public and provide accessors if needed.(Éó®€úÿÿÿÿ8¿’éŸ 1
+}
+java:S1104Õ"ZMake pessoaJuridica a static final constant or non-public and provide accessors if needed.(‹Ò§€ıÿÿÿÿ8¿’éŸ 1
+s
+java:S1104ş"VMake pessoa6CDV a static final constant or non-public and provide accessors if needed.(ˆ‹¾O8¿’éŸ 1
+K
+java:S1444".Make this "public static base_url" field final(…ßã£8¿’éŸ 1
+O
+java:S1444"-Make this "public static pessoa1" field final(ÚÅô”üÿÿÿÿ8¿’éŸ 1
+V
+java:S14442"4Make this "public static pessoa2Digital" field final(¼ˆÉÍùÿÿÿÿ8¿’éŸ 1
+U
+java:S1444d"3Make this "public static pessoa3Facial" field final(ˆÈ·úÿÿÿÿ8¿’éŸ 1
+Y
+java:S1444”"6Make this "public static pessoa4FacialCDV" field final(ı™ŸÇşÿÿÿÿ8¿’éŸ 1
+]
+java:S1444 ":Make this "public static pessoa5FacialDIGITAL" field final(Éó®€úÿÿÿÿ8¿’éŸ 1
+W
+java:S1444Õ"4Make this "public static pessoaJuridica" field final(‹Ò§€ıÿÿÿÿ8¿’éŸ 1
+M
+java:S1444ş"0Make this "public static pessoa6CDV" field final(ˆ‹¾O8¿’éŸ 1
+p
+java:S3008"SRename this field "base_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ßã£8¿’éŸ 1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ÎÇÀÂüÿÿÿÿ8¿’éŸ 1

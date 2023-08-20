@@ -3,6 +3,7 @@ package com.apkdoandroid.datavalid_demo;
 import com.apkdoandroid.datavalid_demo.util.Constantes;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -30,7 +31,20 @@ public class RetrofitClient {
     }
 
     private static OkHttpClient.Builder clientHttp() {
+
+        /*
+            Os valores padrão para os tempos limite do OkHttpClient são os seguintes:
+
+            connectTimeout: 10 segundos
+            readTimeout: 10 segundos
+            writeTimeout: 10 segundos
+         */
             OkHttpClient.Builder client = new OkHttpClient.Builder();
+
+            // Define os tempos limite
+            client.connectTimeout(20, TimeUnit.SECONDS); // Tempo limite para estabelecer a conexão
+            client.readTimeout(20, TimeUnit.SECONDS);    // Tempo limite para leitura da resposta
+            client.writeTimeout(20, TimeUnit.SECONDS);   // Tempo limite para escrever a requisição
 
             client.addInterceptor(new Interceptor() {
                 @Override

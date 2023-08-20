@@ -43,4 +43,9 @@ dependencies {
     //Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(files( "libs/ImageBase64Encoder.jar"))
+    implementation("com.pixelcarrot.base64image:base64image:1.0.0")
+
 }

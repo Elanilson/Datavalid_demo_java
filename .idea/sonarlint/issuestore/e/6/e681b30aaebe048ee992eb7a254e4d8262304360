@@ -1,0 +1,32 @@
+
+v
+java:S11925"TDefine a constant instead of duplicating this literal "Responde_Datavalid" 25 times.(²ñ‚ïıÿÿÿÿ8‘òÿóŸ1
+e
+java:S11926"HDefine a constant instead of duplicating this literal "Code: " 24 times.(«¢¶8‘òÿóŸ1
+J
+java:S1604,"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8‘òÿóŸ1
+E
+java:S1604F"(Make this anonymous inner class a lambda(—ö¡8‘òÿóŸ1
+D
+java:S1604`"(Make this anonymous inner class a lambda(³Ø®w8‘òÿóŸ1
+J
+java:S1604"(Make this anonymous inner class a lambda(ˆÇ„Óùÿÿÿÿ8‘òÿóŸ1
+F
+java:S1604"(Make this anonymous inner class a lambda(ªºß˜8ÄÉÊôŸ1
+K
+java:S1604½"(Make this anonymous inner class a lambda(çÛø²úÿÿÿÿ8Û¹ÍöŸ1
+K
+java:S1604Ü"(Make this anonymous inner class a lambda(çÛø²úÿÿÿÿ8ë¥ÃùŸ1
+K
+java:S1604û"(Make this anonymous inner class a lambda(ÙÚßÿüÿÿÿÿ8ŸË•úŸ1
+r
+java:S1450"URemove the "button" field and declare it as a local variable in the relevant methods.(ÈòÉ¹8èòÿóŸ1
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¨Œşÿÿÿÿ8øòÿóŸ1
+]	java:S125P"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8óÿóŸ1
+]	java:S125o"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8˜óÿóŸ1
+^	java:S125"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8©óÿóŸ1
+^	java:S125­"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8æÊÊôŸ1
+^	java:S125Ì"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8¹ºÍöŸ1
+^	java:S125ë"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8Ù¦ÃùŸ1
+^	java:S125Š"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8—Ì•úŸ1
