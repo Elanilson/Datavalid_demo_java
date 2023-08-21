@@ -1,0 +1,153 @@
+
+r
+java:S1192·"TDefine a constant instead of duplicating this literal "Responde_Datavalid" 11 times.(Ê™ÓÌ8àĞì¡1
+j
+java:S1192Ò"GDefine a constant instead of duplicating this literal "Code: " 3 times.(úáÅ§şÿÿÿÿ8àĞì¡1
+}
+java:S1192Ó"ZDefine a constant instead of duplicating this literal "Temos o arquivo em base64" 3 times.(²˜ïîıÿÿÿÿ8àĞì¡1
+K
+java:S1604œ"(Make this anonymous inner class a lambda(ˆÜÛıüÿÿÿÿ8àĞì¡1
+K
+java:S1604¢"(Make this anonymous inner class a lambda(’ óøúÿÿÿÿ8ğĞì¡1
+K
+java:S1604¨"(Make this anonymous inner class a lambda(òì¦ïøÿÿÿÿ8ğĞì¡1
+K
+java:S1604¯"(Make this anonymous inner class a lambda(¯±ç©úÿÿÿÿ8ğĞì¡1
+F
+java:S1604º"(Make this anonymous inner class a lambda(œƒÚÕ8ğĞì¡1
+‡
+java:S1488"dImmediately return this expression instead of assigning it to the temporary variable "base64String".(ã¬èéúÿÿÿÿ8ğĞì¡1
+n	java:S101j"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(áÂ¦şÿÿÿÿ8ğĞì¡1
+p
+java:S2095†"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Éâôıÿÿÿÿ8¯Ñì¡1
+e
+java:S2637"GParameter 2 to this call is marked "@NonNull" but null could be passed.(­±­ñ8¯Ñì¡1
+j
+java:S2637´"GParameter 2 to this call is marked "@NonNull" but null could be passed.(åŒØıÿÿÿÿ8¬”ı 1
+Z
+java:S2589ª"7Remove this expression which always evaluates to "true"(…îşéøÿÿÿÿ8¯Ñì¡1
+q	java:S116p"URename this field "doc_frente" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úú¥É8¯Ñì¡1
+p	java:S116p"TRename this field "doc_verso" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úú¥É8¯Ñì¡1
+n	java:S116v"RRename this field "KeyBean" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô®ü¦8¾Ñì¡1
+d
+java:S1659p"GDeclare "doc_frente" and all following declarations on a separate line.(úú¥É8¾Ñì¡1
+r
+java:S1450p"URemove the "selfie" field and declare it as a local variable in the relevant methods.(úú¥É8¾Ñì¡1
+V
+java:S1854Â"8Remove this useless assignment to local variable "json".(éÌ—ê8ÎÑì¡1
+G
+java:S1481Â")Remove this unused "json" local variable.(éÌ—ê8ØÉˆı 1
+Y	java:S125Ë"<This block of commented-out lines of code should be removed.(˜õªÁ8ÎÑì¡1
+^	java:S125Ñ"<This block of commented-out lines of code should be removed.(ÒŠ„Óúÿÿÿÿ8ÎÑì¡1
+U
+java:S1172ã"2Remove this unused method parameter "requestCode".(Í‰­Ùÿÿÿÿÿ8ÎÑì¡1
+Y	java:S125è"<This block of commented-out lines of code should be removed.(òÙÑØ8İÑì¡1
+\
+java:S1874ï">Remove this use of "startActivityForResult"; it is deprecated.(¤ü©Â8İÑì¡1
+Y	java:S125ò"<This block of commented-out lines of code should be removed.(­ñÒ—8İÑì¡1
+^	java:S125"<This block of commented-out lines of code should be removed.(«»íÃşÿÿÿÿ8İÑì¡1
+q
+java:S3252š"NUse static access with "android.provider.MediaStore$MediaColumns" for "TITLE".(ê†§şÿÿÿÿ8èÉˆı 1
+u
+java:S3252›"RUse static access with "android.provider.MediaStore$MediaColumns" for "MIME_TYPE".(Øµ—ªşÿÿÿÿ8İÑì¡1
+^	java:S125¡"<This block of commented-out lines of code should be removed.(”ÇÔŸşÿÿÿÿ8İÑì¡1
+^	java:S125¼"<This block of commented-out lines of code should be removed.(„’ı÷ÿÿÿÿÿ8íÑì¡1
+M
+java:S2093Õ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8íÑì¡1
+k
+java:S3252ë"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(´Ë¡é8íÑì¡1
+k
+java:S3252ï"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(ŞÿŞµ8íÑì¡1
+p
+java:S3252ú"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(íÂÓÂøÿÿÿÿ8íÑì¡1
+p
+java:S3252ı"MUse static access with "android.provider.MediaStore$MediaColumns" for "DATA".(­ÉûÔıÿÿÿÿ8íÑì¡1
+^
+java:S3252…"@Use static access with "android.provider.BaseColumns" for "_ID".(æ¼Ê«8èÉˆı 1
+^
+java:S3252†"@Use static access with "android.provider.BaseColumns" for "_ID".(”ïÿÖ8íÑì¡1
+^
+java:S3252‘"@Use static access with "android.provider.BaseColumns" for "_ID".(Î·Ö¬8íÑì¡1
+h
+java:S1874©"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8íÑì¡1
+p
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ŸŒ¹Ñ8íÑì¡1
+^	java:S125¬"<This block of commented-out lines of code should be removed.(ÿúŒ…şÿÿÿÿ8íÑì¡1
+Y	java:S125¯"<This block of commented-out lines of code should be removed.(®ËÁ8íÑì¡1
+T
+java:S1874³"1Remove this use of "getBitmap"; it is deprecated.(éÁéşÿÿÿÿ8íÑì¡1
+^	java:S125Â"<This block of commented-out lines of code should be removed.(¬·¼ıûÿÿÿÿ8íÑì¡1
+Y	java:S125Æ"<This block of commented-out lines of code should be removed.(¥ÎÜ¯8ıÑì¡1
+Y	java:S125É"<This block of commented-out lines of code should be removed.(Ôƒ±¢8ıÑì¡1
+p
+java:S1871Û"MThis branch's code block is the same as the block for the branch on line 468.(ÁÓ¼ûÿÿÿÿ8ıÑì¡1
+X	java:S125Ñ"<This block of commented-out lines of code should be removed.(“Ú—8ıÑì¡1
+X	java:S125×"<This block of commented-out lines of code should be removed.(“Ú—8ıÑì¡1
+X	java:S125Ş"<This block of commented-out lines of code should be removed.(“Ú—8ıÑì¡1
+m
+java:S1874ó"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8ıÑì¡1
+d
+java:S1075ƒ"ARefactor your code to get this URI from a customizable parameter.(üÅ²æøÿÿÿÿ8ıÑì¡1
+Y	java:S125"<This block of commented-out lines of code should be removed.(í¥€8ıÑì¡1
+@
+java:S1128"Remove this duplicated import.(°şÊóøÿÿÿÿ8÷Éˆı 1
+;
+java:S1128$"Remove this duplicated import.(€¶£î8÷Éˆı 1
+:
+java:S1128>"Remove this duplicated import.(¾ì8÷Éˆı 1
+@
+java:S1128@"Remove this duplicated import.(°şÊóøÿÿÿÿ8÷Éˆı 1
+;
+java:S1128B"Remove this duplicated import.(ãçšş8÷Éˆı 1
+;
+java:S1128T"Remove this duplicated import.(å’µŞ8÷Éˆı 1
+:
+java:S1128U"Remove this duplicated import.(³ğ‹G8÷Éˆı 1
+:
+java:S1128V"Remove this duplicated import.(¾ì8÷Éˆı 1
+@
+java:S1128W"Remove this duplicated import.(òêû‘ıÿÿÿÿ8ö¾ì¡1
+@
+java:S1128X"Remove this duplicated import.(°şÊóøÿÿÿÿ8ıÑì¡1
+;
+java:S1128Y"Remove this duplicated import.(ãçšş8ıÑì¡1
+@
+java:S1128Z"Remove this duplicated import.(Ø½­äşÿÿÿÿ8÷Éˆı 1
+@
+java:S1128["Remove this duplicated import.(ú¯ëàüÿÿÿÿ8÷Éˆı 1
+@
+java:S1128\"Remove this duplicated import.(©›ïÍúÿÿÿÿ8÷Éˆı 1
+;
+java:S1128]"Remove this duplicated import.(ˆÛúÜ8÷Éˆı 1
+;
+java:S1128^"Remove this duplicated import.(¾Èêš8÷Éˆı 1
+;
+java:S1128_"Remove this duplicated import.(€¶£î8÷Éˆı 1
+;
+java:S1128`"Remove this duplicated import.(ş¤—²8÷Éˆı 1
+@
+java:S1128a"Remove this duplicated import.(üäÂùÿÿÿÿ8÷Éˆı 1
+@
+java:S1128b"Remove this duplicated import.(ªº»Úıÿÿÿÿ8÷Éˆı 1
+@
+java:S1128c"Remove this duplicated import.(Ó ³ÿÿÿÿÿ8ıÑì¡1
+:
+java:S1128h"Remove this duplicated import.(¾ì8ıÑì¡1
+:
+java:S1128i"Remove this duplicated import.(ìÔ×[8ıÑì¡1
+G
+java:S1068p"*Remove this unused "selfie" private field.(úú¥É8ıÑì¡1
+J
+java:S1068p"-Remove this unused "doc_verso" private field.(úú¥É8ıÑì¡1
+I
+java:S1068s",Remove this unused "photoUri" private field.(­æ­Ş8ıÑì¡1
+W
+java:S1068y"5Remove this unused "REQUEST_SAVE_FILE" private field.(õÂşïúÿÿÿÿ8÷Éˆı 1
+Y
+java:S1068z"7Remove this unused "cameraManagerHelper" private field.(¿ê«Ôıÿÿÿÿ8ıÑì¡1
+_
+java:S1068|"=Remove this unused "REQUEST_CAMERA_PERMISSION" private field.(º¯†èûÿÿÿÿ8ıÑì¡1
+J
+java:S1068"-Remove this unused "imageView" private field.(øû¯8ıÑì¡1
+T
+java:S1144‚"6Remove this unused private "getImageIdFromUri" method.(’†¯¿8ıÑì¡1

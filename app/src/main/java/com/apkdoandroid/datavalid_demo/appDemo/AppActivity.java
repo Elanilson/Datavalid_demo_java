@@ -101,6 +101,8 @@ public class AppActivity extends AppCompatActivity {
         dialog = new Dialog(this);
         dialogCustomInfo();
 
+        binding.editTextCPF.setText("11295395045");
+
         // Verifica se a permissão da câmera já foi concedida
         if (
                 ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED &&
@@ -137,6 +139,11 @@ public class AppActivity extends AppCompatActivity {
         binding.buttonEnviarDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String cpf = binding.editTextCPF.getText().toString();
+                if(cpf == null || cpf.isEmpty()){
+                    Toast.makeText(AppActivity.this, "Informe o CPF.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 dialog.show();
 
                 // Suponha que você já carregou uma imagem no imageView
@@ -144,7 +151,7 @@ public class AppActivity extends AppCompatActivity {
                 LogUtils.saveLogToFile(AppActivity.this, selfie);
                 LogUtils.saveLogToFile(AppActivity.this, doc_frente);
                 LogUtils.saveLogToFile(AppActivity.this, doc_verso);
-                keyBean.setCpf("02498501258");
+                keyBean.setCpf(cpf);
                 enviarEndPointA(selfie,doc_frente,doc_verso);
             }
         });
@@ -152,6 +159,12 @@ public class AppActivity extends AppCompatActivity {
         binding.buttonDemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String cpf = binding.editTextCPF.getText().toString();
+                if(cpf == null || cpf.isEmpty()){
+                    cpf = "11295395045";
+                    binding.editTextCPF.setText(cpf);
+                }
+
                 dialog.show();
                 // Suponha que você já carregou uma imagem no imageView
                 Bitmap bitmapUser = BitmapFactory.decodeResource(getResources(), R.drawable.foto_user);
@@ -164,7 +177,7 @@ public class AppActivity extends AppCompatActivity {
                 LogUtils.saveLogToFile(AppActivity.this, baseCNHFrente);
                 String base64CNHVErso = convertBitmapToBase64(bitmapCNHVErso);
                 LogUtils.saveLogToFile(AppActivity.this, base64CNHVErso);
-                keyBean.setCpf("11295395045");
+                keyBean.setCpf(cpf);
                // enviarEndPoint(base64User,baseCNHFrente,base64CNHVErso);
                 enviarEndPointA(base64User,baseCNHFrente,base64CNHVErso);
             }
@@ -388,7 +401,7 @@ public class AppActivity extends AppCompatActivity {
                     } catch (JSONException e) {
                         String msgErro = "cannot be converted to JSONArray";
 
-                        dialogMensagem("Ops! errorBody \n "+e.getMessage());
+                        dialogMensagem("Ops! Sem resposta \n  TimeOut");
 
                         Log.d("Responde_Datavalid","JSONException "+e.getMessage() );
                     }catch (RuntimeException e){
@@ -579,40 +592,54 @@ public class AppActivity extends AppCompatActivity {
                 Bitmap imageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
                 getContentResolver().delete(imageUri, null, null); /// remove a imagem salva quando tirei a foto
 
-                imageBitmap = getResizedBitmap(imageBitmap, 1449, 1000);
-                // Atualiza o ImageView com a imagem capturada
-                if (targetImageView != null) {
-                    targetImageView.setImageBitmap(imageBitmap);
-                    targetImageView = null; // Limpa a referência após a atualização
-                }
-
 
                 saveImageToGallery(AppActivity.this,imageBitmap);
 
                 if (imageBitmap != null) {
 
-                    String base64Image = convertBitmapToBase64(imageBitmap);
-                    LogUtils.saveLogToFile(AppActivity.this, base64Image);
+                    String base64Image = "";
 
-                    Log.d("Responde_Datavalid",base64Image);
-                    if (base64Image != null) {
                         // Agora você tem a imagem capturada convertida em base64
                         // Armazene-a ou faça o que quiser com ela
                         if (requestCode == REQUEST_IMAGE_SELFIE) {
+                            imageBitmap = getResizedBitmap(imageBitmap, 250, 333);
+                            base64Image = convertBitmapToBase64(imageBitmap);
                             // Salva na variável de selfie
-                            selfie = base64Image;
-                            Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            if (base64Image != null) {
+                                selfie = base64Image;
+                                Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            }
+
                         } else if (requestCode == REQUEST_IMAGE_DOC_FRENTE) {
+                            imageBitmap = getResizedBitmap(imageBitmap, 1449, 1000);
+                            base64Image = convertBitmapToBase64(imageBitmap);
                             // Salva na variável de documento frente
-                            doc_frente = base64Image;
-                            Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            if (base64Image != null) {
+                                doc_frente = base64Image;
+                                Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            }
+
                         } else if (requestCode == REQUEST_IMAGE_DOC_VERSO) {
+                            imageBitmap = getResizedBitmap(imageBitmap, 1449, 1000);
+                            base64Image = convertBitmapToBase64(imageBitmap);
                             // Salva na variável de documento verso
-                            doc_verso = base64Image;
-                            Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            if (base64Image != null) {
+                                doc_verso = base64Image;
+                                Toast.makeText(this, "Temos o arquivo em base64", Toast.LENGTH_SHORT).show();
+                            }
+
                         }
 
+                    Log.d("Responde_Datavalid",base64Image);
+                        //salvando log
+                    LogUtils.saveLogToFile(AppActivity.this, base64Image);
+
+                    // Atualiza o ImageView com a imagem capturada
+                    if (targetImageView != null) {
+                        targetImageView.setImageBitmap(imageBitmap);
+                        targetImageView = null; // Limpa a referência após a atualização
                     }
+
 
                 }else{
                     Toast.makeText(this, "BitMap veio null", Toast.LENGTH_SHORT).show();

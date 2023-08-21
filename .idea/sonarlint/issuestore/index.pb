@@ -63,9 +63,13 @@ t
 Dapp/src/main/java/com/apkdoandroid/datavalid_demo/model/KeyBean.java,d\5\d59c1007fedc495b7e3a40f3c28d18aeb9a58715
 z
 Japp/src/main/java/com/apkdoandroid/datavalid_demo/model/DocumentoBean.java,b\a\bacbecea242ee67688fc06ba03fcf85bc47f04b2
-u
-Eapp/src/main/java/com/apkdoandroid/datavalid_demo/RetrofitClient.java,0\2\0241b6d70fa03087471fc529bc7f69205861de59
 |
 Lapp/src/main/java/com/apkdoandroid/datavalid_demo/model/BiometriaFacial.java,b\1\b1d9852bb13e3ef7cfb1553d4e63f9225757b1aa
-p
-@app/src/main/java/com/apkdoandroid/datavalid_demo/model/CNH.java,7\c\7c664f61bcb5150048358de95ff127a53c9b03fd
+x
+Happ/src/main/java/com/apkdoandroid/datavalid_demo/model/ApiResponse.java,8\f\8fe0d0e6e44049900464ee0dd526d18030c6b327
+y
+Iapp/src/main/java/com/apkdoandroid/datavalid_demo/model/PessoaFisica.java,0\d\0d89e2537ad514f74a7124dde31136477c90ef6b
+„
+Tapp/src/main/java/com/apkdoandroid/datavalid_demo/model/RespostaFacil_e_digital.java,b\b\bb7459181d553f91bd7e8d97cf964e2f6f23f85a
+y
+Iapp/src/main/java/com/apkdoandroid/datavalid_demo/demo2/demoActivity.java,9\b\9b106f66a74bd4df4d3dd4eec3a135905376e6d2

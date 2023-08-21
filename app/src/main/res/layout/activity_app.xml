@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Doc trans"
+            android:text="Doc verso"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -71,11 +71,26 @@
             app:srcCompat="@drawable/cnh_verso" />
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/editTextCPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CPF"
+        android:inputType="number|numberSigned"
+        android:lines="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:singleLine="true"
+        android:text="11295395045" />
+
     <Button
         android:id="@+id/buttonEnviarDados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:text="Enviar Dados" />
 
     <Button

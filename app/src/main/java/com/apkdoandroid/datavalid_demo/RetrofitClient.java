@@ -42,9 +42,9 @@ public class RetrofitClient {
             OkHttpClient.Builder client = new OkHttpClient.Builder();
 
             // Define os tempos limite
-            client.connectTimeout(20, TimeUnit.SECONDS); // Tempo limite para estabelecer a conexão
-            client.readTimeout(20, TimeUnit.SECONDS);    // Tempo limite para leitura da resposta
-            client.writeTimeout(20, TimeUnit.SECONDS);   // Tempo limite para escrever a requisição
+            client.connectTimeout(22, TimeUnit.SECONDS); // Tempo limite para estabelecer a conexão
+            client.readTimeout(22, TimeUnit.SECONDS);    // Tempo limite para leitura da resposta
+            client.writeTimeout(22, TimeUnit.SECONDS);   // Tempo limite para escrever a requisição
 
             client.addInterceptor(new Interceptor() {
                 @Override
